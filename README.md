@@ -48,3 +48,8 @@ Object      | Message
 ____________|_______________
 (/homepage) |
 bookmarks   | show list of bookmarks 
+
+homepage    | have button that directs to ALL 
+
+/bookmarks  | erb:views 
+            | 
