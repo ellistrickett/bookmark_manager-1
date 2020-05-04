@@ -11,7 +11,11 @@
           null,
           null,
           1,
-          1,
+          null,
+          2,
+          null,
+          null,
+          2,
           null,
           null,
           1,
@@ -32,10 +36,21 @@
           1,
           1,
           null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
           null
+        ]
+      },
+      "/Users/joannacollier/Documents/Coding/Makers/Course/W4/bookmark_manager/spec/units/bookmark_spec.rb": {
+        "lines": [
+
         ]
       }
     },
-    "timestamp": 1588603980
+    "timestamp": 1588606603
   }
 }
