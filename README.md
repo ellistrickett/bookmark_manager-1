@@ -39,7 +39,7 @@ I'd like <Task>.
 1 . Show a list of bookmarks: 
 
 As the user,
-So that I can see all my bookmarks, 
+So that I can view quickly all my bookmarks, 
 I'd like my bookmarks to show in a list
 
 # Domain Model #
