@@ -6,10 +6,7 @@ class BookmarkManager < Sinatra::Base
   end
 
   get '/bookmarks' do 
-    @bookmarks = [
-      'https://www.facebook.com/',
-      'https://www.instagram.com/'
-    ]
+    @bookmarks = Bookmark.new.all 
     erb(:all_bookmarks)
   end 
 
