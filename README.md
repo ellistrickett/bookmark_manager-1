@@ -36,10 +36,10 @@ I'd like <Task>.
 
 ////
 
-1 . Show a list of bookmarks: 
+1 . Show a list of bookmarks:
 
 As the user,
-So that I can view quickly all my bookmarks, 
+So that I can view quickly all my bookmarks,
 I'd like my bookmarks to show in a list
 
 # Domain Model #
@@ -47,14 +47,14 @@ I'd like my bookmarks to show in a list
 Object      | Message
 ____________|_______________
 (/homepage) |
-bookmarks   | show list of bookmarks 
+bookmarks   | show list of bookmarks
 
-homepage    | have button that directs to ALL 
+homepage    | have button that directs to ALL
 
-/bookmarks  | erb:views 
-            | 
+/bookmarks  | erb:views
+            |
 
-database    | 
+database    |
 
 ////
 
@@ -62,5 +62,8 @@ database    |
 
 1. Connect to psql
 2. Create the database using the psql command CREATE DATABASE bookmark_manager;
+3. Create the database using the psql command CREATE DATABASE bookmark_manager_test;
 3. Connect to the database using the pqsl command \c bookmark_manager;
+4. Run the query we have saved in the file 01_create_bookmarks_table.sql
+3. Connect to the database using the pqsl command \c bookmark_manager_test;
 4. Run the query we have saved in the file 01_create_bookmarks_table.sql
