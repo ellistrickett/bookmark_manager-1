@@ -9,6 +9,7 @@ gem 'rspec'
 gem 'capybara'
 gem 'simplecov', require: false
 gem 'simplecov-console', require: false
+gem 'pg' 
 
 group :development, :test do
   gem "rubocop", "0.79.0"

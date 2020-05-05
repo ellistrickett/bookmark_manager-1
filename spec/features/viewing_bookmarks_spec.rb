@@ -11,7 +11,8 @@ feature 'Viewing bookmarks' do
 
   scenario "Shows array of bookmarks" do 
     visit('/bookmarks') 
-    expect(page).to have_content 'https://www.facebook.com'
-    expect(page).to have_content 'https://www.instagram.com'
+    expect(page).to have_content 'http://www.makersacademy.com'
+    expect(page).to have_content 'http://www.google.com'
+    expect(page).to have_content 'http://www.destroyallsoftware.com'
   end 
 end
