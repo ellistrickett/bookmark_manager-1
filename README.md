@@ -42,6 +42,12 @@ As the user,
 So that I can view quickly all my bookmarks,
 I'd like my bookmarks to show in a list
 
+2. Add new bookmarks 🚧
+
+As a user,
+So that add new bookmarks,
+I want add to the bookmarks list via a form. 
+
 # Domain Model #
 
 Object      | Message
