@@ -1,5 +1,3 @@
-
-
 feature 'Viewing bookmarks' do
   scenario 'visits index page' do
     visit('/')
@@ -13,7 +11,7 @@ feature 'Viewing bookmarks' do
 
   scenario "Shows array of bookmarks" do 
     visit('/bookmarks') 
-    expect(page).to have_content('https://www.facebook.com/')
-    expect(page).to have_content('https://www.instagram.com/')
+    expect(page).to have_content 'https://www.facebook.com'
+    expect(page).to have_content 'https://www.instagram.com'
   end 
 end
