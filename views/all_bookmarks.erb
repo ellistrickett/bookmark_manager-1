@@ -1,7 +1,15 @@
+<form action="/bookmarks" method="post">
+  <label for="url">URL:</label><br>
+  <input type="text" name="url" ><br>
+  <input type="submit" name="submit" value="Submit">
+</form>
+
+</form>
+
 <h> All Bookmarks: </h>
 
-<ol> 
+<ol>
   <% @bookmarks.each do |page| %>
     <li> <%= page %> </li>
   <% end %>
-</ol> 
+</ol>
