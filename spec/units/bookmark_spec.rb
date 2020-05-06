@@ -31,15 +31,22 @@ describe Bookmark do
     end
   end
 
-  describe 'title and url arguments' do 
-    
+  describe '.delete' do
+    it 'deletes a bookmark' do
+      Bookmark.add('http://www.testwebsite.com', 'Test Website')
+      expect { Bookmark.delete('Test Website') }.to change { Bookmark.all.length }.by(-1)
+    end
+  end
+
+  describe 'title and url arguments' do
+
     let(:subject) { described_class.new('http://www.makersacademy.com', 'Makers Academy')}
 
-    it 'returns the title' do 
+    it 'returns the title' do
       expect(subject.title).to eq ('Makers Academy')
     end
 
-    it 'returns the url' do 
+    it 'returns the url' do
       expect(subject.url).to eq ('http://www.makersacademy.com')
     end
   end

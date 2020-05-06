@@ -12,7 +12,12 @@
 
 <ol>
   <% @bookmarks.each do |bookmark| %>
-    <li> <%= bookmark.title %>: <a href="<%bookmark.url%>"><%= bookmark.url %> </a>  </li>
+    <li>
+      <%= bookmark.title %>: <a href="<%= bookmark.url %>"> <%= bookmark.url %> </a> 
+      <form class="" action="/delete-bookmarks" method="post">
+        <input type="hidden" name="title" value="<%= bookmark.title %>">
+        <input type="submit" name="<%= bookmark.title %>" value="Delete">
+      </form>
+    </li>
   <% end %>
 </ol>
-

@@ -45,8 +45,8 @@ I'd like my bookmarks to show in a list
 2. Add new bookmarks 🚧
 
 As a user,
-So that add new bookmarks,
-I want add to the bookmarks list via a form. 
+So that I can add new bookmarks,
+I want add bookmarks to the list via a form.
 
 # Domain Model #
 
@@ -64,7 +64,7 @@ database    |
 
 ////
 
-# Database # 
+# Database #
 
 1. Connect to psql
 2. Create the database using the psql command CREATE DATABASE bookmark_manager;
