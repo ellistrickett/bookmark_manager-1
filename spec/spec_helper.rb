@@ -19,11 +19,12 @@ require File.join(File.dirname(__FILE__), '..', 'app.rb')
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
+require 'features/web_helper'
 
 # Tell Capybara to talk to BookmarkManager
 Capybara.app = BookmarkManager
 
-require './setup_test_database.rb'
+require_relative './setup_test_database.rb'
 
 RSpec.configure do |config|
   config.before(:each) do

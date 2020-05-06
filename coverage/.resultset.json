@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/student/Documents/week-4/afternoon/ellis/bookmark_manager/app.rb": {
+      "/Users/ellistrickett/dec_bookmarks/bookmark_manager/app.rb": {
         "lines": [
           1,
           1,
@@ -12,110 +12,140 @@
           null,
           null,
           1,
-          4,
-          4,
+          6,
+          6,
           null,
           null,
           1,
-          1,
-          1,
+          2,
+          2,
           null,
           null,
           1,
           null
         ]
       },
-      "/Users/student/Documents/week-4/afternoon/ellis/bookmark_manager/lib/bookmark.rb": {
+      "/Users/ellistrickett/dec_bookmarks/bookmark_manager/lib/bookmark.rb": {
         "lines": [
           1,
           null,
           1,
-          1,
-          6,
           null,
-          6,
-          6,
+          1,
+          null,
+          1,
+          12,
+          12,
+          null,
+          null,
+          1,
+          9,
+          null,
+          9,
+          9,
           null,
           0,
           null,
           null,
-          6,
-          6,
-          8,
+          9,
+          9,
+          10,
           null,
           null,
-          6,
+          9,
           null,
           null,
           1,
-          2,
-          2,
+          3,
+          3,
           null,
           0,
           null,
           null,
+          3,
+          null,
+          null
+        ]
+      },
+      "/Users/ellistrickett/dec_bookmarks/bookmark_manager/spec/features/web_helper.rb": {
+        "lines": [
+          1,
+          null,
+          2,
+          null,
+          2,
+          2,
           2,
           null,
           null
         ]
       },
-      "/Users/student/Documents/week-4/afternoon/ellis/bookmark_manager/spec/setup_test_database.rb": {
+      "/Users/ellistrickett/dec_bookmarks/bookmark_manager/spec/setup_test_database.rb": {
         "lines": [
           1,
           null,
           1,
-          6,
+          9,
           null,
-          6,
+          9,
           null,
           null,
-          6,
+          9,
           null
         ]
       },
-      "/Users/student/Documents/week-4/afternoon/ellis/bookmark_manager/spec/features/add_bookmark_spec.rb": {
+      "/Users/ellistrickett/dec_bookmarks/bookmark_manager/spec/features/add_bookmark_spec.rb": {
         "lines": [
           1,
           1,
           1,
           null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/student/Documents/week-4/afternoon/ellis/bookmark_manager/spec/features/viewing_bookmarks_spec.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
           1,
           1,
           null,
           null
         ]
       },
-      "/Users/student/Documents/week-4/afternoon/ellis/bookmark_manager/spec/units/bookmark_spec.rb": {
+      "/Users/ellistrickett/dec_bookmarks/bookmark_manager/spec/features/interactive_bookmark_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/ellistrickett/dec_bookmarks/bookmark_manager/spec/features/viewing_bookmarks_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/ellistrickett/dec_bookmarks/bookmark_manager/spec/units/bookmark_spec.rb": {
         "lines": [
           1,
           null,
@@ -136,10 +166,28 @@
           1,
           1,
           null,
+          1,
+          1,
+          1,
+          null,
           null,
           null,
           1,
           1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          3,
+          null,
+          1,
+          1,
+          null,
+          null,
           1,
           1,
           null,
@@ -148,6 +196,6 @@
         ]
       }
     },
-    "timestamp": 1588772433
+    "timestamp": 1588780188
   }
 }
