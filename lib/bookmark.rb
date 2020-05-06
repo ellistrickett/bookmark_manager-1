@@ -12,13 +12,7 @@ class Bookmark
   def self.all
     bookmarks = []
 
-    if ENV['ENVIRONMENT'] == 'test'
-      con = PG.connect :dbname => 'bookmark_manager_test'
-    else
-      con = PG.connect :dbname => 'bookmark_manager'
-    end
-
-    result = con.exec('SELECT * FROM bookmarks;')
+    result = connect_to_database.exec('SELECT * FROM bookmarks;')
     result.each do |row|
       bookmarks << Bookmark.new(row['url'], row['title'])
     end
@@ -27,22 +21,20 @@ class Bookmark
   end
 
   def self.add(url, title)
-    if ENV['ENVIRONMENT'] == 'test'
-      con = PG.connect :dbname => 'bookmark_manager_test'
-    else
-      con = PG.connect :dbname => 'bookmark_manager'
-    end
-
-    con.exec("INSERT INTO bookmarks(url, title) VALUES ('#{url}', '#{title}')")
+    connect_to_database.exec("INSERT INTO bookmarks(url, title) VALUES ('#{url}', '#{title}')")
   end
 
   def self.delete(title)
-    if ENV['ENVIRONMENT'] == 'test'
-      con = PG.connect :dbname => 'bookmark_manager_test'
-    else
-      con = PG.connect :dbname => 'bookmark_manager'
-    end
+    connect_to_database.exec("DELETE FROM bookmarks WHERE title = '#{title}'")
+  end
 
-    con.exec("DELETE FROM bookmarks WHERE title = '#{title}'")
+  private
+
+  def self.connect_to_database
+    if ENV['ENVIRONMENT'] == 'test'
+      PG.connect :dbname => 'bookmark_manager_test'
+    else
+      PG.connect :dbname => 'bookmark_manager'
+    end
   end
 end
