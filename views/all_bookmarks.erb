@@ -14,10 +14,13 @@
   <% @bookmarks.each do |bookmark| %>
     <li>
       <%= bookmark.title %>: <a href="<%= bookmark.url %>"> <%= bookmark.url %> </a> 
-      <form class="" action="/delete-bookmarks" method="post">
+      <form action="/delete-bookmarks" method="post">
         <input type="hidden" name="title" value="<%= bookmark.title %>">
         <input type="submit" name="<%= bookmark.title %>" value="Delete">
       </form>
+      <form action="/bookmarks/<%= bookmark.id %>/edit" method="get">
+        <input type="submit" value="Update"/>
+      </form>  
     </li>
   <% end %>
 </ol>
